@@ -50,13 +50,13 @@ module.exports = (grunt) => {
                         expand: true,
                         flatten: true,
                         src: ['prebuild/index.html'],
-                        dest: 'build/dist/'
+                        dest: 'dist/src/'
                     },
                     {
                         expand: true,
                         flatten: true,
                         src: ['prebuild/main.min.css'],
-                        dest: 'build/dist/styles/'
+                        dest: 'dist/src/styles/'
                     }
                 ]
             }
@@ -65,7 +65,7 @@ module.exports = (grunt) => {
         uglify: {
             target: {
                 files: {
-                    'build/dist/scripts/main.min.js':
+                    'dist/src/scripts/main.min.js':
                     'src/scripts/main.js'
                 }
             }
