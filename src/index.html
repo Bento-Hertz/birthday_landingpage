@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aniversário do Bento</title>
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="icon" href="./assets/icon.png">
 </head>
 <body>
-    
+    <main>
+        <header class="container hero">
+            <div class="overlay transparent_black"></div>
+            <div class="overlay transparent_to_green"></div>
+            <img class="hero__background" src="./assets/hero.jpg" alt="hollow knight drawing">
+            <div class="hero__subcontainer">
+                <div class="inviting">
+                    <img class="logo" src="./assets/logo.png" alt="">
+                    <h1>Venha comemorar o meu aniversário de 12 anos comigo <br/> em <span id="time_counter"></span></h1>
+                </div>
+                <div class="infos">
+                    <ul class="infos__list">
+                        <li class="infos__list__item">
+                            <b>Local</b>
+                            <span>R. Bento Lisboa, 999 - Catete</span>
+                        </li>
+                        <li class="infos__list__item">
+                            <b>Data</b>
+                            <span>09/10/2024 às 18h</span>
+                        </li>
+                    </ul>
+                    <button>Quero ir!</button>
+                </div>
+            </div>
+        </header>
+        <section class="about">
+            <ul class="about__list">
+                <li class="container about__list__item">
+                    <article>
+                        <div class="img_container">
+                            <img src="./assets/events/img1.jpg" alt="">
+                        </div>
+                        <div>
+                            <h2>Atrações</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam tenetur commodi expedita reprehenderit? Id eius repellendus soluta quam praesentium voluptatum ut enim at repudiandae, tempora alias, commodi itaque odio error!</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="container about__list__item">
+                    <article>
+                        <div class="align_right">
+                            <h2>Comidas</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam tenetur commodi expedita reprehenderit? Id eius repellendus soluta quam praesentium voluptatum ut enim at repudiandae, tempora alias, commodi itaque odio error!</p>
+                        </div>
+                        <div class="img_container">
+                            <img src="./assets/events/img2.jpg" alt="">
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>
