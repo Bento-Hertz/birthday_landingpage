@@ -1,3 +1,5 @@
+AOS.init();
+
 const eventDate = new Date('Oct 10, 2024 18:00:00');
 const eventTimeStamp = eventDate.getTime();
 

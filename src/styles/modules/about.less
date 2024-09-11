@@ -20,10 +20,15 @@
                     border-radius: 8px;
                     overflow: hidden;
                     img {
-                        width: 380px;
                         height: 210px;
                         object-fit: cover;
                         display: block;
+                    }
+
+                    @media @tabletBreakpoint {
+                        img {
+                            width: 380px;
+                        }
                     }
                 }
             }
