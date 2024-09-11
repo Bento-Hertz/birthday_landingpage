@@ -86,5 +86,5 @@ module.exports = (grunt) => {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-clean');
 
-    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('default', ['less', 'htmlmin', 'replace', 'uglify', 'clean']);
 }
