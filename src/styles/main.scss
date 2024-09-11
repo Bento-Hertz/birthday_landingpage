@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import './variables/variables.scss';
+@import './modules/hero.scss';
+@import './modules/about.scss';
+
+@font-face {
+    font-family: "Trajan Pro";
+    src: url("../assets/fonts/trajanpro_bold.otf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Trajan Pro";
+    src: url("../assets/fonts/trajanpro_regular.ttf");
+}
+
+body {
+    color: $white;
+    background-color: $white;
+    font-family: "Trajan Pro", sans-serif;
+    font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a, button {
+    color: inherit;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.container {
+    padding: 48px 24px;
+    
+    > * {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    @media(min-width: $tablet) {
+        padding: 64px 32px;
+    }
+}
