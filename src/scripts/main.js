@@ -1,6 +1,6 @@
 AOS.init();
 
-const eventDate = new Date('Oct 10, 2024 18:00:00');
+const eventDate = new Date('July 9, 2025 18:00:00');
 const eventTimeStamp = eventDate.getTime();
 
 const displayTimeElement = document.querySelector('#time_counter');
