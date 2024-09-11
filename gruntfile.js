@@ -41,7 +41,7 @@ module.exports = (grunt) => {
                         },
                         {
                             match: 'ENDERECO_ASSETS',
-                            replacement: '../../src/assets'
+                            replacement: './assets'
                         }
                     ]
                 },
