@@ -1,4 +1,4 @@
-@import '../variables/variables.scss';
+@import '../variables/variables.less';
 
 .hero {
     position: relative;
@@ -17,19 +17,19 @@
         z-index: 1;
         max-width: none;
     
-        @media(min-width: $tablet) {
+        @media @tabletBreakpoint {
             height: 80vh;
         }
     }
         
     .transparent_black {
-        background-color: $transparent_black;
+        background-color: @transparent_black;
     }
     .transparent_to_green {
-        background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, $green);
+        background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, @green);
     }
 
-    &__background {
+    .background {
         position: absolute;
         top: 0;
         left: 0;
@@ -38,7 +38,7 @@
         max-width: none !important;
     }
 
-    &__subcontainer {
+    .subcontainer {
         position: relative;
         z-index: 2;
         display: grid;
@@ -57,7 +57,7 @@
                 text-align: center;
             }
 
-            @media(min-width: $tablet) {
+            @media @tabletBreakpoint {
                 .logo {
                     max-width: 500px;
                     margin-bottom: 16px;
@@ -69,16 +69,16 @@
             display: grid;
             padding: 8px;
             border-radius: 8px;
-            border: 2px solid $white;
-            background-color: $black;
+            border: 2px solid @white;
+            background-color: @black;
             gap: 16px;
 
-            &__list {
+            .list {
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
 
-                &__item {
+                .item {
                     display: grid;
                     gap: 8px;
                     b {
@@ -89,20 +89,20 @@
 
             button {
                 padding: 8px 32px;
-                background-color: $green;
+                background-color: @green;
                 border-radius: 8px;
                 font-weight: bold;
             }
 
             button:hover {
-                background-color: $green_hover;
+                background-color: @green_hover;
             }
 
-            @media(min-width: $tablet) {
+            @media @tabletBreakpoint {
                 grid-template-columns: 1fr auto;
                 padding: 16px;
 
-                &__list {
+                .list {
                     flex-direction: row;
                     gap: 32px;
                 }
@@ -110,10 +110,10 @@
         }
     }
 
-    @media(min-width: $tablet) {
+    @media @tabletBreakpoint {
         height: 80vh;
 
-        &__background {
+        .background {
             height: 80vh;
         }
     }

@@ -1,11 +1,11 @@
-@import '../variables/variables.scss';
+@import '../variables/variables.less';
 
 .about {
-    background-color: $black;
+    background-color: @black;
 
-    &__list {
-        &__item {
-            background-image: linear-gradient($green, $black, $black, $black, $green);
+    .list {
+        .item {
+            background-image: linear-gradient(@green, @black, @black, @black, @green);
             article {
                 display: grid;
                 align-items: center;
@@ -16,7 +16,7 @@
                 }
 
                 .img_container {
-                    border: 2px solid $white;
+                    border: 2px solid @white;
                     border-radius: 8px;
                     overflow: hidden;
                     img {
@@ -26,8 +26,8 @@
             }
         }
 
-        @media(min-width: $tablet) {
-            &__item {
+        @media @tabletBreakpoint {
+            .item {
                 article {
                     grid-template-columns: 1fr 1fr;
                 }

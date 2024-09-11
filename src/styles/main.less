@@ -1,22 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-@import './variables/variables.scss';
-@import './modules/hero.scss';
-@import './modules/about.scss';
+@import './variables/variables.less';
+@import './modules/hero.less';
+@import './modules/about.less';
 
 @font-face {
     font-family: "Trajan Pro";
-    src: url("../assets/fonts/trajanpro_bold.otf");
+    src: url("../@@ENDERECO_ASSETS/fonts/trajanpro_bold.otf");
     font-weight: bold;
 }
 @font-face {
     font-family: "Trajan Pro";
-    src: url("../assets/fonts/trajanpro_regular.ttf");
+    src: url("../@@ENDERECO_ASSETS/fonts/trajanpro_regular.ttf");
 }
 
 body {
-    color: $white;
-    background-color: $white;
+    color: @white;
+    background-color: @white;
     font-family: "Trajan Pro", sans-serif;
     font-size: 14px;
 }
@@ -62,7 +60,7 @@ h1 {
         margin: 0 auto;
     }
     
-    @media(min-width: $tablet) {
+    @media @tabletBreakpoint {
         padding: 64px 32px;
     }
 }
