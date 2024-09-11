@@ -1,0 +1,120 @@
+@import '../variables/variables.scss';
+
+.hero {
+    position: relative;
+    height: 90vh;
+    overflow-y: hidden;
+    display: grid;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 90vh;
+        width: 100%;
+        display: block;
+        content: '';
+        z-index: 1;
+        max-width: none;
+    
+        @media(min-width: $tablet) {
+            height: 80vh;
+        }
+    }
+        
+    .transparent_black {
+        background-color: $transparent_black;
+    }
+    .transparent_to_green {
+        background-image: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, $green);
+    }
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 90vh;
+        object-fit: cover;
+        max-width: none !important;
+    }
+
+    &__subcontainer {
+        position: relative;
+        z-index: 2;
+        display: grid;
+        gap: 16px;
+        align-content: space-between;
+
+        .inviting {
+            display: grid;
+
+            .logo {
+                max-width: 380px;
+                margin: 0 auto;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            @media(min-width: $tablet) {
+                .logo {
+                    max-width: 500px;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+
+        .infos {
+            display: grid;
+            padding: 8px;
+            border-radius: 8px;
+            border: 2px solid $white;
+            background-color: $black;
+            gap: 16px;
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                &__item {
+                    display: grid;
+                    gap: 8px;
+                    b {
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            button {
+                padding: 8px 32px;
+                background-color: $green;
+                border-radius: 8px;
+                font-weight: bold;
+            }
+
+            button:hover {
+                background-color: $green_hover;
+            }
+
+            @media(min-width: $tablet) {
+                grid-template-columns: 1fr auto;
+                padding: 16px;
+
+                &__list {
+                    flex-direction: row;
+                    gap: 32px;
+                }
+            }
+        }
+    }
+
+    @media(min-width: $tablet) {
+        height: 80vh;
+
+        &__background {
+            height: 80vh;
+        }
+    }
+}
